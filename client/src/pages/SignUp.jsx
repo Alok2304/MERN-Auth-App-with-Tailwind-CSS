@@ -1,6 +1,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
+import OAuth from '../components/OAuth';
 
 export default function SignUp() {
   const [formData, setFormData] = useState({});
@@ -66,6 +67,7 @@ export default function SignUp() {
 				<button disabled={loading} className="bg-slate-700 text-white uppercase p-3 rounded-lg disabled:opacity-80 hover:opacity-95">
 					{loading ? 'Loading...' : 'Sign Up'}
 				</button>
+				<OAuth />
 			</form>
 			<div className="mt-3">
 				<p>
